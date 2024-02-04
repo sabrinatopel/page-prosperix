@@ -25,8 +25,17 @@
               "gray-1": "#b1b1b1",
               "gray-2": "#D9D9D9",
               "gray-3": "#F6F6F6",
+              "gray-4": "#979797",
               mint: "#92BBB9",
               "light-mint": "#E0F8F8",
+              "green-1": "#CAFFD2",
+              "green-2": "#33DF58",
+              "red-1": "#FFABAB",
+              "red-2": "#CF4141",
+              "blue-1": "#70F1EA",
+              "blue-2": "#27B4AC",
+              "yellow-1": "#FFEE90",
+              "yellow-2": "#B59F28",
             },
             fontSize: {
               sm: "0.8rem",
@@ -81,7 +90,7 @@
         </div>
         <div class="w-auto p-1">
           <button
-            class="p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white">
+            class="p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white shadow-lg shadow-gray-500/40">
             Get Started
           </button>
         </div>
@@ -113,7 +122,7 @@
             </div>
 
             <button
-              class="ml-1 p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white">
+              class="ml-1 p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white shadow-lg shadow-gray-500/40">
               Get Started
             </button>
           </div>
@@ -223,7 +232,7 @@
           </p>
           <div>
             <button
-              class="ml-1 p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white">
+              class="ml-1 p-4 shadow-lg shadow-gray-500/40 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white">
               Explore Services
             </button>
           </div>
@@ -302,9 +311,24 @@
                 <p class="font-black relative z-0">Investment growth</p>
                 <div class="flex p-5">
                   <ul class="chart-skills">
-                    <li>
-                    </li>
+                    <li></li>
                   </ul>
+                </div>
+                <div class="flex flex-nowrap justify-around">
+                  <p class="font-bold ml-3 text-gray-4">0%</p>
+                  <p class="font-bold text-gray-4">Based on interest rate</p>
+                  <p class="font-bold ml-3 text-gray-4">100%</p>
+                </div>
+                <div class="flex">
+                  <div
+                  class="bg-green-1 mt-3 ml-3 h-2 rounded"
+                  style="width: 48%; "></div>
+                  <div
+                  class="bg-blue-1 mt-3 ml-3  h-2 rounded"
+                  style="width: 25%;"></div>
+                  <div
+                  class="bg-red-1 mt-3 ml-3  h-2 rounded"
+                  style="width: 15%;"></div>
                 </div>
               </div>
             </div>
@@ -319,27 +343,63 @@
               class="bg-primary mt-3 ml-3"
               style="width: 60px; height: 2px"></div>
           </div>
-          <p class="font-black  text-4xl">
-            Our Services Can Help You <br />Grow Your Investments  <br />and Wealth
+          <p class="font-black text-4xl">
+            Our Services Can Help You <br />Grow Your Investments <br />and
+            Wealth
           </p>
           <p
             class="mt-5 text-third font-medium flex flex-wrap max-w-lg leading-6 mt-5">
-            Embark on a Journey to Unlock a World of Financial Opportunities, Grow Your Investment with Our Comprehensive and Expert Services
+            Embark on a Journey to Unlock a World of Financial Opportunities,
+            Grow Your Investment with Our Comprehensive and Expert Services
           </p>
           <div>
-            <button
-              class="ml-1  mt-5 p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white">
-              Explore Services
-            </button>
+            <div class="flex">
+              <div class="flex flex-col">
+                <div class="pt-5 pr-5">
+                  <div
+                    class="p-2 px-3 bg-green-1 rounded shadow-lg shadow-gray-500/10">
+                    <i class="fa-solid fa-dollar-sign text-green-2 mx-2"></i>
+                    <span class="text-green-2">Financial Planning</span>
+                  </div>
+                </div>
+                <div class="pt-5 pr-5">
+                  <div
+                    class="p-2 px-3 bg-blue-1 rounded shadow-lg shadow-gray-500/10">
+                    <i class="fa-solid fa-house text-blue-2 mx-2"></i
+                    ><span class="text-blue-2">Estate Planning</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="pt-5 pr-5">
+                  <div
+                    class="p-2 px-3 bg-red-1 rounded shadow-lg shadow-gray-500/10">
+                    <i class="fa-solid fa-chart-pie text-red-2 mx-2"></i
+                    ><span class="text-red-2">Investment Advisory</span>
+                  </div>
+                </div>
+
+                <div class="pt-5 pr-5">
+                  <div
+                    class="p-2 px-3 bg-yellow-1 rounded shadow-lg shadow-gray-500/10">
+                    <i
+                      class="fa-solid fa-building-columns text-yellow-2 mx-2"></i
+                    ><span class="text-yellow-2">Wealth Management</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-5">
+              <button
+                class="ml-1 p-4 bg-primary font-semibold focus:border-gray-300 focus:outline focus:outline-2 rounded text-white shadow-lg shadow-gray-500/40">
+                Explore Services
+              </button>
+            </div>
           </div>
         </div>
       </section>
-      <section>
-
-       
-      </section>
     </div>
 
-    <footer class="footer">teste</footer>
+    <!-- <footer class="footer">teste</footer> -->
   </body>
 </html>

@@ -78,15 +78,18 @@ body {
 
 .bar-horizontal[data-label="Income"] {
   background-color: #fee355;
-  --tamanho: 80%;
+  --tamanho: 10px;
+  --tamanho-padrao: 80%;
 }
 .bar-horizontal[data-label="Utilities"] {
   background-color: #ff8181;
   --tamanho: 67%;
+  --tamanho-padrao: 10px;
 }
 .bar-horizontal[data-label="Revenue"] {
   background-color: #20cfc6;
-  --tamanho: 40%;
+  --tamanho: 10px;
+  --tamanho-padrao: 40%;
 }
 
 .fora-2 {
@@ -194,5 +197,79 @@ body {
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+/* donut */
+.chart-skills {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  width: 350px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.chart-skills *,
+.chart-skills::before {
+  box-sizing: border-box;
+}
+
+.chart-skills::before,
+.chart-skills::after {
+  position: absolute;
+}
+
+.chart-skills::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  border: 45px solid rgba(211, 211, 211, 0.3);
+  border-bottom: none;
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.chart-skills::after {
+  content: "88.7%";
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #565656;
+}
+
+.chart-skills li {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border: 45px solid;
+  border-top: none;
+  border-bottom-left-radius: 175px;
+  border-bottom-right-radius: 175px;
+  transform-origin: 50% 0;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.chart-skills li:nth-child(1) {
+  z-index: 3;
+  border-color: #25dad0;
+  animation: rotate-one 3s 0.1s ease infinite alternate;
+}
+
+@keyframes rotate-one {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(150deg);
   }
 }

@@ -118,21 +118,17 @@
           </div>
         </div>
         <div
-          style="
-            width: 30%;
-            z-index: 1;
-            margin-top: 200px;
-            margin-right: 150px;
-          ">
+          class="relative z-5"
+          style="width: 30%; margin-top: 200px; margin-right: 150px">
           <img src="./assets/grafos.png" />
         </div>
 
         <div
-          class="charts"
-          style="z-index: 1; margin-left: 750px; margin-top: -520px">
+          class="charts relative z-5"
+          style="margin-left: 750px; margin-top: -520px">
           <div
-            class="rounded-md shadow-lg shadow-gray-500/20 px-5 py-3 bg-white"
-            style="z-index: 1">
+            class="rounded-md shadow-lg shadow-gray-500/20 px-5 py-3 bg-white relative"
+            style="z-index: 999">
             <p class="text-mint font-bold">Investiments</p>
             <div
               class="flex flex-nowrap justify-around content-end"
@@ -224,12 +220,20 @@
             </button>
           </div>
         </div>
-        <div class="bg-light-mint">
-          <div class="charts" style="z-index: 1">
+        <div class="bg-light-mint rounded-bl-lg rounded-tr-lg ">
+          <img
+            src="./assets/Image.png"
+            width="350"
+            height="501"
+            style="margin-left: 40px;"
+            class="relative z-0" />
+          <div style="margin-right: 100px; padding: 20px;">
             <div
-              class="rounded-md shadow-lg shadow-gray-500/20 px-5 py-3 bg-white"
-              style="z-index: 1">
-              <p class="font-black">Investment growth</p>
+            class="charts bg-white relative z-1 rounded-bl-lg rounded-tr-lg "
+            style="margin-top: -200px; width: 100%;">
+            <div
+              class="rounded-md shadow-lg shadow-gray-500/20 px-9 py-7 bg-white">
+              <p class="font-black relative z-0">Investment growth</p>
               <div class="flex">
                 <div class="flex flex-col justify-around w-full">
                   <div
@@ -269,11 +273,7 @@
               </div>
             </div>
           </div>
-          <img
-            src="./assets/Image.png"
-            style="z-index: 0"
-            width="350"
-            height="501" />
+          </div>
         </div>
       </section>
     </div>

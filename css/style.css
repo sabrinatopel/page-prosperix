@@ -78,15 +78,15 @@ body {
 
 .bar-horizontal[data-label="Income"] {
   background-color: #fee355;
-  --tamanho: var(--tamanho4);
+  --tamanho: 80%;
 }
 .bar-horizontal[data-label="Utilities"] {
   background-color: #ff8181;
-  --tamanho: var(--tamanho2);
+  --tamanho: 67%;
 }
 .bar-horizontal[data-label="Revenue"] {
   background-color: #20cfc6;
-  --tamanho: var(--tamanho1);
+  --tamanho: 40%;
 }
 
 .fora-2 {

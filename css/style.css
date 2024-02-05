@@ -305,7 +305,7 @@ p.center {
   position: absolute;
   width: 100%;
 }
-.circle {
+.donut {
   border-radius: 50%;
   clip: rect(0px, 100px, 200px, 0px);
   height: 100%;
@@ -319,7 +319,7 @@ p.center {
   transform: rotate(0deg);
 }
 
-#part1 .circle {
+#part1 .donut {
   background-color: #FF6B6B;
   animation: first 1s 1 forwards;
 }
@@ -327,14 +327,14 @@ p.center {
 #part2 {
   transform: rotate(100deg);
 }
-#part2 .circle {
+#part2 .donut {
   background-color: #20B2AA;
   animation: second 1s 1 forwards 1s;
 }
 #part3 {
   transform: rotate(250deg);
 }
-#part3 .circle {
+#part3 .donut {
   background-color: #4DECE3;
   animation: third 0.5s 1 forwards 2s;
 }
